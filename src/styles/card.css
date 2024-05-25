@@ -1,0 +1,42 @@
+@import './variables.css';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 390px;
+  gap: 10px;
+  border-radius: 30px;
+  padding: 15px;
+  border: 3px solid var(--border-color);
+  transition: background-color .3s ease, transform .3s ease;
+  cursor: pointer;
+
+  @media (min-width: 640px) {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+.card:hover {
+  background-color: var(--bg-hover-color);
+  transform: scale(.9);
+}
+
+.card__image {
+  max-width: 85px;
+  align-self: center;
+}
+.card__title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin: 5px 0;
+}
+.card__description {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 1.4rem;
+  flex-grow: 1;
+}

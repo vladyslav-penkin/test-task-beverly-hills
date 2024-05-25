@@ -1,0 +1,18 @@
+.main {
+  
+}
+.main__cards {
+  padding: 140px 0;
+}
+
+.main__cards-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+
+  @media (min-width: 868px) {
+    flex-wrap: nowrap;
+  }
+}

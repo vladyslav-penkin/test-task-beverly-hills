@@ -1,0 +1,52 @@
+@import './variables.css';
+
+.footer {
+  padding: 50px 0;
+  background-color: var(--footer-color);
+
+  @media (min-width: 640px) {
+    padding: 120px 0 50px 0;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.footer__image {
+  max-width: 108px;
+  max-height: 108px;
+}
+
+.footer__title {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.footer__description {
+  color: var(--light-color);
+  margin-top: 10px;
+  font-size: 1.4rem;
+
+  @media (min-width: 640px) {
+    font-size: 1.6rem;
+  }
+}
+
+.footer__nav {
+  margin-top: 40px;
+}
+
+.footer__all-rights {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-align: center;
+}

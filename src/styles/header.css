@@ -1,0 +1,69 @@
+@import './variables.css';
+@import './animations.css';
+
+.header {
+  background-image: var(--bg-header-color);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+.header__title {
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 60px 0 100px 0;
+
+
+  @media (min-width: 640px) {
+    padding: 140px 0 180px 0;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+.nav {
+
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+
+  @media (min-width: 640px) {
+    padding: 40px 0;
+  }
+}
+
+.nav__item {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  border-radius: 50px;
+  transition: background-color .3s ease;
+}
+
+.nav__item:hover {
+  background-color: var(--hover-color);
+}
+
+.nav__item--active {
+  background-color: var(--hover-color);
+}
+
+.nav__link {
+  color: white;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
